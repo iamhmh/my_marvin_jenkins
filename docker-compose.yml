@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  web:
+    environment:
+      USER_CHOCOLATEEN_PASSWORD: password
+      USER_VAUGIE_G_PASSWORD: password
+      USER_I_DONT_KNOW_PASSWORD: password
+      USER_NASSO_PASSWORD: password
+    build:
+      context: .
+    image: my_marvin
+    ports:
+      - 8080:8080
